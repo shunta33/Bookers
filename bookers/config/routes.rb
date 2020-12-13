@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'books/' => 'books#index'
   post '/book' => 'books#create'
   get 'books/:id' => 'books#show', as: 'book_show'
-  get 'books/edit' => 'books/:id/edit'
+  get 'books/:id/edit' => 'books#edit', as: 'book_e'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end
